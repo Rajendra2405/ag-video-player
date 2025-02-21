@@ -1,0 +1,9 @@
+<div class="modal-overlay" *ngIf="isOpen">
+    <div class="modal-content">
+        <button class="close-button" (click)="closeModal()">X</button>
+      <video id="videoPlayer" class="video-js vjs-default-skin" controls>
+        <source [src]="videoUrl" [type]="mimeType" />
+      </video>
+    </div>
+  </div>
+  
